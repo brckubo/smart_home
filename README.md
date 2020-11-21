@@ -16,9 +16,9 @@
 
 >远程ssh连接软件选择 **finalshell** 
 
-     Windows版下载地址:
+     # Windows版下载地址:
      http://www.hostbuf.com/downloads/finalshell_install.exe
-     其他版本下载： 
+     # 其他版本下载： 
      http://www.hostbuf.com/t/988.html
 >在云服务的控制台复制服务器公网IP,填入连接的用户名（一般默认为root）,密码为上面你设置的服务器密码
  
@@ -27,10 +27,8 @@
 >MQTT服务器搭建，我们采用的是[EMQX](https://github.com/emqx/emqx)
       
       # 1.使用finalshell登录到云服务器
-      
       # 2.安装docker
         apt install docker.io
-
       # 3.在docker运行emqx
         docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p 18083:18083 emqx/emqx
 >在云服务的控制台里面的防火墙规则开启端口1883(mqtt端口)，18083(mqtt后台管理，账号密码：admin/public）
