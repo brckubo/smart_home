@@ -44,7 +44,14 @@
 
 ### 远程开关（smart_switch）
 
+- ***Step1.*** 准备元器件
+>ESP8266 NodeMCU Lua V3 + usb传输线  *  1
 
+>3脚共阳LED灯+单脚LED灯 * 1
+
+>1K电阻数颗
+
+- ***Step2.*** 电路连接
       
       
 
