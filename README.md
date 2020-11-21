@@ -14,7 +14,7 @@
 
 - ***Step2.*** 连接到服务器
 
->远程ssh连接软件选择 **finalshell** ,
+>远程ssh连接软件选择 **finalshell** 
 
      Windows版下载地址:
      http://www.hostbuf.com/downloads/finalshell_install.exe
@@ -24,7 +24,7 @@
  
 `连接到云服务器参考：`[Finalshell远程连接Linux服务器](https://blog.csdn.net/qq_44163269/article/details/107123402?utm_medium=distribute.pc_relevant.none-task-blog-OPENSEARCH-3.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-OPENSEARCH-3.control)
 
->MQTT服务器搭建，我们采用的是[EMQ](https://github.com/emqx/emqx)
+>MQTT服务器搭建，我们采用的是[EMQX](https://github.com/emqx/emqx)
       
       # 1.使用finalshell登录到云服务器
       # 2.下载EMQ源码包,在终端执行下面命令
