@@ -27,33 +27,13 @@
 >MQTT服务器搭建，我们采用的是[EMQX](https://github.com/emqx/emqx)
       
       # 1.使用finalshell登录到云服务器
+      
+      # 2.安装docker
+        apt install docker.io
 
-      # 2.下载EMQ源码包,在终端执行下面命令
-      git clone -b v4.0.0 https://github.com/emqx/emqx-rel.git
-
-      #编译
-      cd emqx-rel && make
-
-      #执行
-      cd _build/emqx/rel/emqx && ./bin/emqx console 
-
-
-      # ! 报错处理
-      1.  /usr/bin/env: ‘escript’: No such file or directory 
-          make: *** [Makefile:51: emqx] Error 127
-      依次执行：
-          #wget http://erlang.org/download/otp_src_20.3.tar.gz
-          wget https://github.com/IINI/smart_home/blob/main/arno_server/otp_src_20.3.tar.gz
-          tar xzf otp_src_20.3.tar.gz
-          cd otp_src_20.3
-          ./configure --prefix=/home/erlang   --without-javac  
-          ln -s /home/erlang/bin/erl /usr/local/bin/erl
-          export PATH=$PATH:/home/erlang/bin
-
-      2.  configure: error: No curses library functions found
-      依次执行：
-          apt-cache search ncurses
-          apt-get install libncurses5-dev
+      # 3.在docker运行emqx
+        docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p 18083:18083 emqx/emqx
+      
           
 
       
