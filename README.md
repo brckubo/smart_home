@@ -12,7 +12,7 @@
 
 >服务器系统选择Ubuntu 20.04.1 LTS，设置服务器密码
 
-- ***Step2.*** 连接到服务器
+- ***Step2.*** 安装MQTT到服务器
 
 >远程ssh连接软件选择 **finalshell** 
 
@@ -27,10 +27,16 @@
 >MQTT服务器搭建，我们采用的是[EMQX](https://github.com/emqx/emqx)
       
       # 1.使用finalshell登录到云服务器
+
       # 2.下载EMQ源码包,在终端执行下面命令
       git clone -b v4.0.0 https://github.com/emqx/emqx-rel.git
+
+      #编译
       cd emqx-rel && make
+
+      #执行
       cd _build/emqx/rel/emqx && ./bin/emqx console 
+
 
       # ! 报错处理
       1.  /usr/bin/env: ‘escript’: No such file or directory 
