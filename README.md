@@ -36,12 +36,18 @@
       1.  /usr/bin/env: ‘escript’: No such file or directory 
           make: *** [Makefile:51: emqx] Error 127
       依次执行：
-          wget http://erlang.org/download/otp_src_20.3.tar.gz
+          #wget http://erlang.org/download/otp_src_20.3.tar.gz
+          wget https://github.com/IINI/smart_home/blob/main/arno_server/otp_src_20.3.tar.gz
           tar xzf otp_src_20.3.tar.gz
           cd otp_src_20.3
           ./configure --prefix=/home/erlang   --without-javac  
           ln -s /home/erlang/bin/erl /usr/local/bin/erl
           export PATH=$PATH:/home/erlang/bin
+
+      2.  configure: error: No curses library functions found
+      依次执行：
+          apt-cache search ncurses
+          apt-get install libncurses5-dev
           
 
       
