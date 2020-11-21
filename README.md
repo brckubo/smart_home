@@ -51,7 +51,11 @@
 
 - ***Step2.*** 电路连接
       
-      
+ 
+
+License
+------------
+Licensed under [The MIT License (MIT)](https://github.com/IINI/smart_home/blob/main/LICENSE).     
 
 
 
