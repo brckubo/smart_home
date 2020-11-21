@@ -33,7 +33,7 @@
 
       # 3.在docker运行emqx
         docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p 18083:18083 emqx/emqx
-      
+>在云服务的控制台里面的防火墙规则开启端口1883（mqtt服务端口），18083（mqtt后台管理，用户名admin,密码public,需要更改密码）
           
 
       
